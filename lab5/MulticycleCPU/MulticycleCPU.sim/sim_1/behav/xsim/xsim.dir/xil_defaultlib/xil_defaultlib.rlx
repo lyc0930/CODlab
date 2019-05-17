@@ -1,0 +1,27 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sim_1/imports/Vivado/GenerateClock.v,1541677725,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/InstructionRegister.v,,GenerateClock,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sim_1/new/CPU_Mem_tb.v,1557244463,verilog,,,,CPU_Mem_tb,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sim_1/new/CPU_tb.v,1557229746,verilog,,,,CPU_tb,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sim_1/new/Multiplexer_tb.v,1557215495,verilog,,,,Multiplexer_tb,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sim_1/new/SinglePulse_tb.v,1557397319,verilog,,,,SinglePulse_tb,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/ip/Memory/sim/Memory.v,1557156317,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/ALU.v,,Memory,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/ALU.v,1557335829,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/ALUControl.v,,ALU,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/ALUControl.v,1557335738,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/ControlUnit.v,,ALUControl,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/CPUDebugDisplay.v,1557047514,verilog,,,,CPUDebugDisplay,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/ControlUnit.v,1557469474,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sim_1/imports/Vivado/GenerateClock.v,,ControlUnit,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/DebugandDisplayUnit.v,1557060235,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/DisplayPulse.v,,DebugandDisplayUnit,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/DisplayPulse.v,1557048976,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/FrequencyDivision.v,,DisplayPulse,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/FrequencyDivision.v,1557048730,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/Hex7SegmentDisplay.v,,FrequencyDivision,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/Hex7SegmentDisplay.v,1556987000,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/InstructionRegister.v,,Hex7SegmentDisplay,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/InstructionRegister.v,1557335574,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/MUX.v,,InstructionRegister,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/MUX.v,1557335589,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/MulticycleCPU.v,,Multiplexer,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/MulticycleCPU.v,1557335391,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/ProgramCounter.v,,MulticycleCPU,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/ProgramCounter.v,1557469380,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/Register.v,,ProgramCounter,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/Register.v,1557469287,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/Registers.v,,Register,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/Registers.v,1557335658,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/SignExtend.v,,Registers,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/SignExtend.v,1556782926,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sim_1/new/CPU_Mem_tb.v,,SignExtend,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,
+/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/SinglePulse.v,1557335469,verilog,,/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sim_1/new/SinglePulse_tb.v,,SinglePulse,,,../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard,,,,,

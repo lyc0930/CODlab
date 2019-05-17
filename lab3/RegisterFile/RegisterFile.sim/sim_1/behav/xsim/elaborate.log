@@ -1,0 +1,8 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto f05f54788ced4d80adc6219c367fea9f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RegisterFile_tb_behav xil_defaultlib.RegisterFile_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'Read_Address_0' [/home/lyc/Vivado/lab3/RegisterFile/RegisterFile.srcs/sim_1/new/RegisterFile_tb.v:32]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

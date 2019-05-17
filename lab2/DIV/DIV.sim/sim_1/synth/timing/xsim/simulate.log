@@ -1,0 +1,3 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+WARNING: "/opt/Xilinx/Vivado/2018.3/data/verilog/src/unisims/LDCE.v" Line 166: Timing violation in scope /DIV_tb/DUT/q[-1111111110]/TChk166_253 at time 195190 ps $setuphold (posedge G,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,G_dly,D_dly) 

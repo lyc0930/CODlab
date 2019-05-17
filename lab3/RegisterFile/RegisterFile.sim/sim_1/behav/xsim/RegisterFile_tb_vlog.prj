@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../RegisterFile.srcs/sim_1/imports/Vivado/GenerateClock.v" \
+"../../../../RegisterFile.srcs/sources_1/new/RegisterFile.v" \
+"../../../../RegisterFile.srcs/sim_1/new/RegisterFile_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

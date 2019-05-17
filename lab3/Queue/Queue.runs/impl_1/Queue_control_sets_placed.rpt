@@ -1,0 +1,78 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Apr 11 20:03:01 2019
+| Host         : YC-YOGA running 64-bit Ubuntu 18.04.2 LTS
+| Command      : report_control_sets -verbose -file Queue_control_sets_placed.rpt
+| Design       : Queue
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    43 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            9 |
+|      7 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              42 |           11 |
+| No           | No                    | Yes                    |               7 |            5 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              16 |            9 |
+| Yes          | Yes                   | No                     |              20 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+------------------------------+------------------------------+------------------+----------------+
+|           Clock Signal           |         Enable Signal        |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------------------------+------------------------------+------------------------------+------------------+----------------+
+|  pulse_0                         | out[3]_i_1_n_0               | reset_IBUF                   |                4 |              4 |
+|  pulse_0                         | QUEUE/Register               | reset_IBUF                   |                1 |              4 |
+|  pulse_0                         | QUEUE/Register[2][3]_i_1_n_0 | reset_IBUF                   |                1 |              4 |
+|  pulse_0                         | QUEUE/Register[3][3]_i_1_n_0 | reset_IBUF                   |                3 |              4 |
+|  pulse_0                         | QUEUE/Register[4][3]_i_2_n_0 | QUEUE/Register[4][3]_i_1_n_0 |                1 |              4 |
+|  pulse_0                         | QUEUE/Register[5][3]_i_2_n_0 | QUEUE/Register[5][3]_i_1_n_0 |                1 |              4 |
+|  pulse_0                         | QUEUE/Register[6][3]_i_2_n_0 | QUEUE/Register[6][3]_i_1_n_0 |                1 |              4 |
+|  pulse_0                         | QUEUE/Register[7][3]_i_2_n_0 | QUEUE/Register[7][3]_i_1_n_0 |                1 |              4 |
+|  pulse_0                         | QUEUE/Register[8][3]_i_2_n_0 | QUEUE/Register[8][3]_i_1_n_0 |                1 |              4 |
+|  pulse_0                         |                              | reset_IBUF                   |                5 |              7 |
+|  CLK100MHZ_IBUF                  |                              |                              |                5 |             18 |
+|  CLK100MHZ_to_5MHZ/inst/clk_out1 |                              |                              |                6 |             24 |
++----------------------------------+------------------------------+------------------------------+------------------+----------------+
+
+

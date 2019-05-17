@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab3/Queue/Queue.srcs/sources_1/new/BCD_to_7Segment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD_to_7Segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab3/Queue/Queue.srcs/sim_1/imports/Vivado/GenerateClock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GenerateClock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab3/Queue/Queue.srcs/sources_1/new/Queue.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Queue
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab3/Queue/Queue.srcs/sources_1/imports/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab3/Queue/Queue.srcs/sim_1/new/Queue_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Queue_tb

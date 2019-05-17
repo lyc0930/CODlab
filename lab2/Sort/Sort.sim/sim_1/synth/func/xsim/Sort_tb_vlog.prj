@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Sort_tb_func_synth.v" \
+"../../../../../Sort.srcs/sim_1/imports/Vivado/GenerateClock.v" \
+"../../../../../Sort.srcs/sim_1/new/Sort_tb.v" \
+
+# Do not sort compile order
+nosort

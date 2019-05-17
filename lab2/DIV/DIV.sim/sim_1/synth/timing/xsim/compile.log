@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab2/DIV/DIV.sim/sim_1/synth/timing/xsim/DIV_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab2/DIV/DIV.srcs/sim_1/imports/Vivado/GenerateClock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GenerateClock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab2/DIV/DIV.srcs/sim_1/new/DIV_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV_tb

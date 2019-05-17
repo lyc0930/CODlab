@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/lyc/Vivado/lab3/Queue/Queue.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/lyc/Vivado/lab3/Queue/Queue.srcs/sim_1/imports/Vivado/GenerateClock.v,1541677725,verilog,,/home/lyc/Vivado/lab3/Queue/Queue.srcs/sources_1/new/Queue.v,,GenerateClock,,,../../../../Queue.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/lyc/Vivado/lab3/Queue/Queue.srcs/sim_1/new/Queue_tb.v,1554979569,verilog,,,,Queue_tb,,,../../../../Queue.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/lyc/Vivado/lab3/Queue/Queue.srcs/sources_1/imports/new/RegisterFile.v,1554971279,verilog,,/home/lyc/Vivado/lab3/Queue/Queue.srcs/sim_1/new/Queue_tb.v,,RegisterFile,,,../../../../Queue.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/lyc/Vivado/lab3/Queue/Queue.srcs/sources_1/new/BCD_to_7Segment.v,1554973273,verilog,,/home/lyc/Vivado/lab3/Queue/Queue.srcs/sim_1/imports/Vivado/GenerateClock.v,,BCD_to_7Segment,,,../../../../Queue.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/lyc/Vivado/lab3/Queue/Queue.srcs/sources_1/new/Queue.v,1554979684,verilog,,/home/lyc/Vivado/lab3/Queue/Queue.srcs/sources_1/imports/new/RegisterFile.v,,Queue,,,../../../../Queue.srcs/sources_1/ip/clk_wiz_0,,,,,

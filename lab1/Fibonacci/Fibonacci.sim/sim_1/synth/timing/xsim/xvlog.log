@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab1/Fibonacci/Fibonacci.sim/sim_1/synth/timing/xsim/FIB_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module Fibonacci
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-311] analyzing module Register_0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab1/Fibonacci/Fibonacci.srcs/sim_1/imports/Vivado/GenerateClock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GenerateClock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lyc/Vivado/lab1/Fibonacci/Fibonacci.srcs/sim_1/new/FIB_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIB_tb

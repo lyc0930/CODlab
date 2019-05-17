@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu May 16 18:47:13 2019
+| Host         : YC-YOGA running 64-bit Ubuntu 18.04.2 LTS
+| Command      : report_control_sets -verbose -file CPUDebugDisplay_control_sets_placed.rpt
+| Design       : CPUDebugDisplay
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    10 |
+| Unused register locations in slices containing registers |    46 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            4 |
+|      8 |            2 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |           12 |
+| No           | No                    | Yes                    |              18 |            7 |
+| No           | Yes                   | No                     |              42 |           12 |
+| Yes          | No                    | No                     |               2 |            2 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+-----------------------------+--------------------------------------+------------------+----------------+
+|             Clock Signal             |        Enable Signal        |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++--------------------------------------+-----------------------------+--------------------------------------+------------------+----------------+
+|  DDU/SecondPulse/count_reg[21]_0     |                             | reset_IBUF                           |                1 |              1 |
+| ~DDU/SecondPulse/count_reg[21]_0     |                             | step_IBUF                            |                1 |              1 |
+|  DDU/CLK100MHZ_to_5MHZ/inst/clk_out1 | DDU/incStabilize/button_s_0 |                                      |                1 |              1 |
+|  DDU/CLK100MHZ_to_5MHZ/inst/clk_out1 | DDU/decStabilize/button_s   |                                      |                1 |              1 |
+|  DDU/incStabilize/button_s           |                             | reset_IBUF                           |                2 |              8 |
+|  DDU/decStabilize/CLK                |                             | reset_IBUF                           |                3 |              8 |
+|  CLK100MHZ_IBUF                      |                             |                                      |                5 |             18 |
+|  DDU/CLK100MHZ_to_5MHZ/inst/clk_out1 |                             | DDU/incStabilize/count[0]_i_1_n_0    |                6 |             21 |
+|  DDU/CLK100MHZ_to_5MHZ/inst/clk_out1 |                             | DDU/decStabilize/count[0]_i_1__0_n_0 |                6 |             21 |
+|  DDU/CLK100MHZ_to_5MHZ/inst/clk_out1 |                             |                                      |                7 |             26 |
++--------------------------------------+-----------------------------+--------------------------------------+------------------+----------------+
+
+

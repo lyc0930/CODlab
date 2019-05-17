@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../MulticycleCPU.srcs/sources_1/ip/ClockWizard" \
+"../../../../MulticycleCPU.srcs/sources_1/new/FixedLengthPulse.v" \
+"../../../../MulticycleCPU.srcs/sim_1/imports/Vivado/GenerateClock.v" \
+"../../../../MulticycleCPU.srcs/sources_1/new/SinglePulse.v" \
+"../../../../MulticycleCPU.srcs/sim_1/new/SinglePulse_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

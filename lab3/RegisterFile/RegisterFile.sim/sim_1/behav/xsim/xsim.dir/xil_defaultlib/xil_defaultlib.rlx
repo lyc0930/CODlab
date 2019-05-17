@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/lyc/Vivado/lab3/RegisterFile/RegisterFile.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/lyc/Vivado/lab3/RegisterFile/RegisterFile.srcs/sim_1/imports/Vivado/GenerateClock.v,1541677725,verilog,,/home/lyc/Vivado/lab3/RegisterFile/RegisterFile.srcs/sources_1/new/RegisterFile.v,,GenerateClock,,,,,,,,
+/home/lyc/Vivado/lab3/RegisterFile/RegisterFile.srcs/sim_1/new/RegisterFile_tb.v,1554893321,verilog,,,,RegisterFile_tb,,,,,,,,
+/home/lyc/Vivado/lab3/RegisterFile/RegisterFile.srcs/sources_1/new/RegisterFile.v,1554890809,verilog,,/home/lyc/Vivado/lab3/RegisterFile/RegisterFile.srcs/sim_1/new/RegisterFile_tb.v,,RegisterFile,,,,,,,,

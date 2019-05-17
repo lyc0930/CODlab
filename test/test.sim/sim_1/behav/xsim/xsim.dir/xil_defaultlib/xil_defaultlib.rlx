@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/lyc/Vivado/test/test.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/lyc/Vivado/test/test.srcs/sim_1/imports/Vivado/GenerateClock.v,1541677725,verilog,,/home/lyc/Vivado/test/test.srcs/sim_1/imports/new/SinglePulse_tb.v,,GenerateClock,,,../../../../test.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/lyc/Vivado/test/test.srcs/sim_1/imports/new/SinglePulse_tb.v,1557455813,verilog,,,,SinglePulse_tb,,,../../../../test.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/lyc/Vivado/test/test.srcs/sources_1/imports/new/FixedLengthPulse.v,1557456499,verilog,,/home/lyc/Vivado/test/test.srcs/sim_1/imports/Vivado/GenerateClock.v,,FixedLengthPulse,,,../../../../test.srcs/sources_1/ip/clk_wiz_0,,,,,

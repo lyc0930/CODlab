@@ -1,0 +1,33 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 0f4d8a3bc70944c495efd903dd53e039 --incr --debug typical --relax --mt 8 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_Mem_tb_behav xil_defaultlib.CPU_Mem_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 's' [/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/MulticycleCPU.v:84]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 's' [/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/MulticycleCPU.v:87]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 's' [/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/MulticycleCPU.v:88]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 5 for port 'Read_Address_2' [/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/MulticycleCPU.v:89]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 's' [/home/lyc/Vivado/lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/MulticycleCPU.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.GenerateClock
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.Multiplexer
+Compiling module xil_defaultlib.InstructionRegister
+Compiling module xil_defaultlib.Register
+Compiling module xil_defaultlib.Multiplexer(DATASIZE=5)
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.SignExtend
+Compiling module xil_defaultlib.Multiplexer(N=4)
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Multiplexer(N=3)
+Compiling module xil_defaultlib.MulticycleCPU
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.CPU_Mem_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_Mem_tb_behav

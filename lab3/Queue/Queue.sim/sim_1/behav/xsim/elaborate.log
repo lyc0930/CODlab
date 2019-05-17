@@ -1,0 +1,17 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 35aedf85eb85409e88b3ae210e239a4c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Queue_tb_behav xil_defaultlib.Queue_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'Read_Address_1' [/home/lyc/Vivado/lab3/Queue/Queue.srcs/sources_1/new/Queue.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.GenerateClock
+Compiling module xil_defaultlib.RegisterFile(M=4)
+Compiling module xil_defaultlib.BCD_to_7Segment
+Compiling module xil_defaultlib.Queue
+Compiling module xil_defaultlib.Queue_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Queue_tb_behav
