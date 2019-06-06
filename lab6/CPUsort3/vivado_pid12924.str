@@ -1,0 +1,249 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 12924
+License: Customer
+
+Current time: 	Thu May 30 18:18:46 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 30 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/Xillinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	F:/Xillinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	77430
+User home directory: C:/Users/77430
+User working directory: F:/COD/CPUsort3
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/Xillinx/Vivado
+HDI_APPROOT: F:/Xillinx/Vivado/2018.3
+RDI_DATADIR: F:/Xillinx/Vivado/2018.3/data
+RDI_BINDIR: F:/Xillinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/77430/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/77430/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/77430/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	F:/Xillinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/COD/CPUsort3/vivado.log
+Vivado journal file location: 	F:/COD/CPUsort3/vivado.jou
+Engine tmp dir: 	F:/COD/CPUsort3/.Xil/Vivado-12924-DESKTOP-1EV9U3G
+
+Xilinx Environment Variables
+----------------------------
+XILINX: F:/Xillinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: F:/Xillinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: F:/Xillinx/Vivado/2018.3
+XILINX_SDK: F:/Xillinx/SDK/2018.3
+XILINX_VIVADO: F:/Xillinx/Vivado/2018.3
+XILINX_VIVADO_HLS: F:/Xillinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 566 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: F:\COD\CPUsort3\CPU.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project F:/COD/CPUsort3/CPU.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 100 MB (+102127kb) [00:00:13]
+// [Engine Memory]: 614 MB (+492591kb) [00:00:13]
+// [GUI Memory]: 106 MB (+1733kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  4341 ms.
+// Tcl Message: open_project F:/COD/CPUsort3/CPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xillinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 53 MB. Current time: 5/30/19, 6:18:52 PM CST
+// [Engine Memory]: 680 MB (+37156kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  1155 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 712.965 ; gain = 108.727 
+// [Engine Memory]: 752 MB (+39454kb) [00:00:19]
+// Project name: CPU; location: F:/COD/CPUsort3; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 795 MB (+5759kb) [00:00:22]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 19 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top module.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top module.v), VGA : vga_ctrl (vga_ctrl.v)]", 8); // B (D, cp)
+// PAPropertyPanels.initPanels (font_rom.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top module.v), VGA : vga_ctrl (vga_ctrl.v), data_rom : font_rom (font_rom.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top module.v), VGA : vga_ctrl (vga_ctrl.v), data_rom : font_rom (font_rom.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// [Engine Memory]: 842 MB (+7324kb) [00:00:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 842 MB. GUI used memory: 55 MB. Current time: 5/30/19, 6:19:19 PM CST
+selectCodeEditor("font_rom.v", 390, 290); // cl (w, cp)
+selectCodeEditor("font_rom.v", 393, 305); // cl (w, cp)
+typeControlKey((HResource) null, "font_rom.v", 'v'); // cl (w, cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+selectCodeEditor("font_rom.v", 108, 223); // cl (w, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("font_rom.v", 116, 406); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("font_rom.v", 123, 287); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 114 MB (+2105kb) [00:02:00]
+// Elapsed time: 18 seconds
+selectCodeEditor("font_rom.v", 111, 200); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectCodeEditor("font_rom.v", 125, 317); // cl (w, cp)
+selectCodeEditor("font_rom.v", 122, 308); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("font_rom.v", 122, 520); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("font_rom.v", 125, 454); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("font_rom.v", 114, 384); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("font_rom.v", 113, 339); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("font_rom.v", 108, 451); // cl (w, cp)
+selectCodeEditor("font_rom.v", 113, 454); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'F:/COD/CPUsort3/CPU.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' is already up-to-date 
+// Tcl Message: [Thu May 30 18:22:42 2019] Launched synth_1... Run output will be captured here: F:/COD/CPUsort3/CPU.runs/synth_1/runme.log [Thu May 30 18:22:42 2019] Launched impl_1... Run output will be captured here: F:/COD/CPUsort3/CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 228 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1403 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3643 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EC7EA 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,653 MB. GUI used memory: 62 MB. Current time: 5/30/19, 6:26:46 PM CST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/COD/CPUsort3/CPU.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,655 MB (+808224kb) [00:08:11]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+// Elapsed time: 21 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// PAPropertyPanels.initPanels (xc7a100t_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/COD/CPUsort3/CPU.runs/impl_1/top_module.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 399 seconds
+selectCodeEditor("font_rom.v", 356, 175); // cl (w, cp)

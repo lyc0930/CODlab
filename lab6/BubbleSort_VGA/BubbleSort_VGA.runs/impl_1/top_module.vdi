@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 30 20:27:25 2019
+# Process ID: 22501
+# Current directory: /home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.runs/impl_1
+# Command line: vivado -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
+# Log file: /home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.runs/impl_1/top_module.vdi
+# Journal file: /home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/lyc/.Xilinx/Vivado/Vivado_init.tcl'
+source top_module.tcl -notrace
+Command: link_design -top top_module -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0/ClockingWizrad_0.dcp' for cell 'CLK100MHZ_to_50MHZ'
+INFO: [Project 1-454] Reading design checkpoint '/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/Memory/Memory.dcp' for cell 'MEM'
+INFO: [Project 1-454] Reading design checkpoint '/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizard_1/ClockingWizard_1.dcp' for cell 'DDU/CLK100MHZ_to_5MHZ'
+INFO: [Netlist 29-17] Analyzing 408 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, CLK100MHZ_to_50MHZ/inst/clkin1_ibufg, from the path connected to top-level port: CLK100MHZ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, DDU/CLK100MHZ_to_5MHZ/inst/clkin1_ibufg, from the path connected to top-level port: CLK100MHZ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'CLK100MHZ_to_50MHZ/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'DDU/CLK100MHZ_to_5MHZ/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0/ClockingWizrad_0_board.xdc] for cell 'CLK100MHZ_to_50MHZ/inst'
+Finished Parsing XDC File [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0/ClockingWizrad_0_board.xdc] for cell 'CLK100MHZ_to_50MHZ/inst'
+Parsing XDC File [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0/ClockingWizrad_0.xdc] for cell 'CLK100MHZ_to_50MHZ/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0/ClockingWizrad_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0/ClockingWizrad_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2128.562 ; gain = 511.516 ; free physical = 2008 ; free virtual = 7225
+Finished Parsing XDC File [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0/ClockingWizrad_0.xdc] for cell 'CLK100MHZ_to_50MHZ/inst'
+Parsing XDC File [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizard_1/ClockingWizard_1_board.xdc] for cell 'DDU/CLK100MHZ_to_5MHZ/inst'
+Finished Parsing XDC File [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizard_1/ClockingWizard_1_board.xdc] for cell 'DDU/CLK100MHZ_to_5MHZ/inst'
+Parsing XDC File [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizard_1/ClockingWizard_1.xdc] for cell 'DDU/CLK100MHZ_to_5MHZ/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizard_1/ClockingWizard_1.xdc:57]
+Finished Parsing XDC File [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/sources_1/ip/ClockingWizard_1/ClockingWizard_1.xdc] for cell 'DDU/CLK100MHZ_to_5MHZ/inst'
+Parsing XDC File [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/constrs_1/imports/COD/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [/home/lyc/Vivado/lab6/BubbleSort_VGA/BubbleSort_VGA.srcs/constrs_1/imports/COD/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2128.562 ; gain = 0.000 ; free physical = 2011 ; free virtual = 7228
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 64 instances
+
+13 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2128.562 ; gain = 775.840 ; free physical = 2011 ; free virtual = 7228
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net DDU/SecondPulse/clock has multiple drivers: DDU/SecondPulse/MEM_i_49/O, and nolabel_line54/MEM_i_50/O.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2160.578 ; gain = 32.016 ; free physical = 2005 ; free virtual = 7222
+INFO: [Common 17-83] Releasing license: Implementation
+18 Infos, 4 Warnings, 0 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 20:27:47 2019...

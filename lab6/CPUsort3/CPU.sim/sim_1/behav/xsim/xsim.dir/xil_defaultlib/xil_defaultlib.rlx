@@ -1,0 +1,17 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+F:/COD/CPU/CPU.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v,1558603358,verilog,,,,CPU_tb,,,../../../../CPU.srcs/sources_1/ip/clk_wiz_1,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/imports/new/ALU.v,1557404208,verilog,,F:/COD/CPU/CPU.srcs/sources_1/new/ALU_Control.v,,ALU,,,../../../../CPU.srcs/sources_1/ip/clk_wiz_1,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/imports/new/RegFile.v,1557403406,verilog,,F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v,,RegFile,,,../../../../CPU.srcs/sources_1/ip/clk_wiz_1,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1557234923,verilog,,F:/COD/CPU/CPU.srcs/sources_1/imports/new/ALU.v,,dist_mem_gen_0,,,,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/new/ALU_Control.v,1557220036,verilog,,F:/COD/CPU/CPU.srcs/sources_1/new/Control.v,,ALU_Control,,,../../../../CPU.srcs/sources_1/ip/clk_wiz_1,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/new/CPU.v,1557242091,verilog,,F:/COD/CPU/CPU.srcs/sources_1/new/Control.v,,CPU,,,,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/new/Control.v,1557310365,verilog,,F:/COD/CPU/CPU.srcs/sources_1/new/Instruction_Register.v,,Control,,,../../../../CPU.srcs/sources_1/ip/clk_wiz_1,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/new/Instruction_Register.v,1557066585,verilog,,F:/COD/CPU/CPU.srcs/sources_1/new/MUX.v,,Instruction_Register,,,../../../../CPU.srcs/sources_1/ip/clk_wiz_1,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/new/MUX.v,1557154250,verilog,,F:/COD/CPU/CPU.srcs/sources_1/new/PC.v,,MUX,,,../../../../CPU.srcs/sources_1/ip/clk_wiz_1,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/new/PC.v,1557309567,verilog,,F:/COD/CPU/CPU.srcs/sources_1/new/Reg32.v,,PC,,,../../../../CPU.srcs/sources_1/ip/clk_wiz_1,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/new/Reg32.v,1557066640,verilog,,F:/COD/CPU/CPU.srcs/sources_1/imports/new/RegFile.v,,Reg32,,,../../../../CPU.srcs/sources_1/ip/clk_wiz_1,,,,,
+F:/COD/CPU/CPU.srcs/sources_1/new/top module.v,1557237413,verilog,,,,top_module,,,,,,,,

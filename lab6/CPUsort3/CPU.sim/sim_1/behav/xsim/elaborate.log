@@ -1,0 +1,29 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xillinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3af5c4fa490c48619da9356f7df2cbcd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CPU_tb_behav xil_defaultlib.CPU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'wa' [F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v:47]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 2 for port 's' [F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v:53]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v:53]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v:54]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v:55]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v:56]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 2 for port 's' [F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v:54]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 2 for port 's' [F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v:55]
+WARNING: [VRFC 10-3091] actual bit length 33 differs from formal bit length 2 for port 's' [F:/COD/CPU/CPU.srcs/sim_1/new/CPU_tb.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.Instruction_Register
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.Reg32
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.CPU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_tb_behav

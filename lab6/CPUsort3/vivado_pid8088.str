@@ -1,0 +1,344 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 8088
+License: Customer
+
+Current time: 	Thu May 30 17:46:47 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 30 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/Xillinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	F:/Xillinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	77430
+User home directory: C:/Users/77430
+User working directory: F:/COD/CPUsort3
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/Xillinx/Vivado
+HDI_APPROOT: F:/Xillinx/Vivado/2018.3
+RDI_DATADIR: F:/Xillinx/Vivado/2018.3/data
+RDI_BINDIR: F:/Xillinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/77430/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/77430/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/77430/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	F:/Xillinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/COD/CPUsort3/vivado.log
+Vivado journal file location: 	F:/COD/CPUsort3/vivado.jou
+Engine tmp dir: 	F:/COD/CPUsort3/.Xil/Vivado-8088-DESKTOP-1EV9U3G
+
+Xilinx Environment Variables
+----------------------------
+XILINX: F:/Xillinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: F:/Xillinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: F:/Xillinx/Vivado/2018.3
+XILINX_SDK: F:/Xillinx/SDK/2018.3
+XILINX_VIVADO: F:/Xillinx/Vivado/2018.3
+XILINX_VIVADO_HLS: F:/Xillinx/Vivado/2018.3
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 679 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: F:\COD\CPUsort3\CPU.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 MB (+105878kb) [00:00:10]
+// [Engine Memory]: 654 MB (+534006kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  3857 ms.
+// Tcl Message: open_project F:/COD/CPUsort3/CPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xillinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 54 MB. Current time: 5/30/19, 5:46:47 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 711.125 ; gain = 105.645 
+// [Engine Memory]: 796 MB (+114966kb) [00:00:15]
+// Project name: CPU; location: F:/COD/CPUsort3; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 839 MB (+3693kb) [00:03:03]
+// [GUI Memory]: 113 MB (+4454kb) [00:03:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 53 MB. Current time: 5/30/19, 5:49:40 PM CST
+// PAPropertyPanels.initPanels (top module.v) elapsed time: 0.2s
+// Elapsed time: 537 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top module.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top module.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 26 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: top_module 
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 980 MB. GUI used memory: 56 MB. Current time: 5/30/19, 5:56:25 PM CST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// [Engine Memory]: 1,102 MB (+231542kb) [00:09:53]
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,103 MB. GUI used memory: 55 MB. Current time: 5/30/19, 5:56:27 PM CST
+// [Engine Memory]: 1,173 MB (+15859kb) [00:09:55]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: F:/Xillinx/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.8s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.4s
+// [GUI Memory]: 128 MB (+10008kb) [00:09:57]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4386 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 947.215 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'Instruction_Register' [F:/COD/CPUsort3/CPU.srcs/sources_1/new/Instruction_Register.v:23] INFO: [Synth 8-6155] done synthesizing module 'Instruction_Register' (4#1) [F:/COD/CPUsort3/CPU.srcs/sources_1/new/Instruction_Register.v:23] INFO: [Synth 8-6157] synthesizing module 'Control' [F:/COD/CPUsort3/CPU.srcs/sources_1/new/Control.v:23] 
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [F:/COD/CPUsort3/CPU.srcs/sources_1/new/Control.v:89] INFO: [Synth 8-155] case statement is not full and has no default [F:/COD/CPUsort3/CPU.srcs/sources_1/new/Control.v:142] INFO: [Synth 8-6155] done synthesizing module 'Control' (5#1) [F:/COD/CPUsort3/CPU.srcs/sources_1/new/Control.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'Reg32' [F:/COD/CPUsort3/CPU.srcs/sources_1/new/Reg32.v:23] INFO: [Synth 8-6155] done synthesizing module 'Reg32' (6#1) [F:/COD/CPUsort3/CPU.srcs/sources_1/new/Reg32.v:23] INFO: [Synth 8-6157] synthesizing module 'RegFile' [F:/COD/CPUsort3/CPU.srcs/sources_1/imports/new/RegFile.v:23] 
+// Tcl Message: 	Parameter M bound to: 5 - type: integer  	Parameter N bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'RegFile' (7#1) [F:/COD/CPUsort3/CPU.srcs/sources_1/imports/new/RegFile.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ALU_Control' [F:/COD/CPUsort3/CPU.srcs/sources_1/new/ALU_Control.v:23] 
+// Tcl Message: 	Parameter R_type bound to: 6'b000000  	Parameter LW bound to: 6'b100011  	Parameter SW bound to: 6'b101011  	Parameter BEQ bound to: 6'b000100  	Parameter BNE bound to: 6'b000101  	Parameter J bound to: 6'b000010  	Parameter addi bound to: 6'b001000  	Parameter andi bound to: 6'b001100  	Parameter ori bound to: 6'b001101  	Parameter xori bound to: 6'b001110  	Parameter slti bound to: 6'b001010  	Parameter ADD bound to: 4'b0000  	Parameter SUB bound to: 4'b0001  	Parameter AND bound to: 4'b0010  	Parameter OR bound to: 4'b0011  	Parameter XOR bound to: 4'b0100  	Parameter NOR bound to: 4'b0101  	Parameter SLT bound to: 4'b0110  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [F:/COD/CPUsort3/CPU.srcs/sources_1/new/ALU_Control.v:56] INFO: [Synth 8-155] case statement is not full and has no default [F:/COD/CPUsort3/CPU.srcs/sources_1/new/ALU_Control.v:66] INFO: [Synth 8-6155] done synthesizing module 'ALU_Control' (8#1) [F:/COD/CPUsort3/CPU.srcs/sources_1/new/ALU_Control.v:23] INFO: [Synth 8-6157] synthesizing module 'ALU' [F:/COD/CPUsort3/CPU.srcs/sources_1/imports/new/ALU.v:23] 
+// Tcl Message: 	Parameter ADD bound to: 4'b0000  	Parameter SUB bound to: 4'b0001  	Parameter AND bound to: 4'b0010  	Parameter OR bound to: 4'b0011  	Parameter XOR bound to: 4'b0100  	Parameter NOR bound to: 4'b0101  	Parameter SLT bound to: 4'b0110  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [F:/COD/CPUsort3/CPU.srcs/sources_1/imports/new/ALU.v:42] INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [F:/COD/CPUsort3/CPU.srcs/sources_1/imports/new/ALU.v:23] INFO: [Synth 8-6157] synthesizing module 'MUX' [F:/COD/CPUsort3/CPU.srcs/sources_1/new/MUX.v:23] INFO: [Synth 8-6155] done synthesizing module 'MUX' (10#1) [F:/COD/CPUsort3/CPU.srcs/sources_1/new/MUX.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'CPU' (11#1) [F:/COD/CPUsort3/CPU.srcs/sources_1/new/CPU.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [F:/COD/CPUsort3/.Xil/Vivado-8088-DESKTOP-1EV9U3G/realtime/dist_mem_gen_0_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (12#1) [F:/COD/CPUsort3/.Xil/Vivado-8088-DESKTOP-1EV9U3G/realtime/dist_mem_gen_0_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'DDU' [F:/COD/CPUsort3/CPU.srcs/sources_1/new/DDU.v:23] INFO: [Synth 8-6157] synthesizing module 'decoder' [F:/COD/CPUsort3/CPU.srcs/sources_1/new/decoder.v:23] INFO: [Synth 8-6155] done synthesizing module 'decoder' (13#1) [F:/COD/CPUsort3/CPU.srcs/sources_1/new/decoder.v:23] INFO: [Synth 8-6155] done synthesizing module 'DDU' (14#1) [F:/COD/CPUsort3/CPU.srcs/sources_1/new/DDU.v:23] INFO: [Synth 8-6157] synthesizing module 'buffer' [F:/COD/CPUsort3/CPU.srcs/sources_1/new/buffer.v:23] 
+// Tcl Message: 	Parameter M bound to: 3 - type: integer  	Parameter N bound to: 4 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 947.215 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 947.215 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 947.215 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'f:/COD/CPUsort3/CPU.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.dcp' for cell 'nolabel_line52' INFO: [Project 1-454] Reading design checkpoint 'f:/COD/CPUsort3/CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'Memory' INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [f:/COD/CPUsort3/CPU.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'nolabel_line52/inst' Finished Parsing XDC File [f:/COD/CPUsort3/CPU.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'nolabel_line52/inst' Parsing XDC File [f:/COD/CPUsort3/CPU.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'nolabel_line52/inst' Finished Parsing XDC File [f:/COD/CPUsort3/CPU.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'nolabel_line52/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/COD/CPUsort3/CPU.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1227.184 ; gain = 0.000 
+// Tcl Message: Parsing XDC File [F:/COD/CPUsort3/CPU.srcs/constrs_1/imports/COD/Nexys4DDR_Master.xdc] Finished Parsing XDC File [F:/COD/CPUsort3/CPU.srcs/constrs_1/imports/COD/Nexys4DDR_Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1227.590 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 64 instances were transformed.   RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 64 instances  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 1245.063 ; gain = 297.848 
+// Tcl Message: 55 Infos, 174 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 1245.063 ; gain = 297.848 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// [GUI Memory]: 138 MB (+3940kb) [00:10:01]
+// Elapsed time: 18 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// Elapsed time: 151 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (aF, cp)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Schematic_zoom_fit"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+floatView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic (2)"); // ax (aI, cp)
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: float view
+maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic (2)"); // ax (aI, aK)
+// [GUI Memory]: 149 MB (+4482kb) [00:13:30]
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: close view
+// Elapsed time: 53 seconds
+closeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic (2)"); // ax (aI, aK)
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic (2)"); // ax (aI, aK)
+maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic (2)"); // ax (aI, aK)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// WARNING: HEventQueue.dispatchEvent() is taking  8802 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9749 ms. Increasing delay to 29247 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 11 ms. Decreasing delay to 2011 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 459ms to process. Increasing delay to 3000 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,221 MB. GUI used memory: 85 MB. Current time: 5/30/19, 6:26:28 PM CST

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1558003582">
-  <File Type="VDS-TIMING-PB" Name="CPUDebugDisplay_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="CPUDebugDisplay_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="CPUDebugDisplay.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="CPUDebugDisplay_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="CPUDebugDisplay_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="CPUDebugDisplay_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="CPUDebugDisplay.vds"/>
   <File Type="REPORTS-TCL" Name="CPUDebugDisplay_reports.tcl"/>
   <File Type="PA-TCL" Name="CPUDebugDisplay.tcl"/>
+  <File Type="RDS-DCP" Name="CPUDebugDisplay.dcp"/>
+  <File Type="RDS-RDS" Name="CPUDebugDisplay.vds"/>
+  <File Type="RDS-UTIL-PB" Name="CPUDebugDisplay_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="CPUDebugDisplay_utilization_synth.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Debounce.v">

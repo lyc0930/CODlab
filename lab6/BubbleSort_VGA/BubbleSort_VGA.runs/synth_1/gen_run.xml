@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1559218947">
+  <File Type="VDS-TIMING-PB" Name="top_module_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_module_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="top_module.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="top_module_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="top_module_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_module_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="top_module.vds"/>
+  <File Type="REPORTS-TCL" Name="top_module_reports.tcl"/>
+  <File Type="PA-TCL" Name="top_module.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ALU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ALU.v"/>
+        <Attr Name="ImportTime" Val="1557335829"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MIPS_opcode.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PipelineCPU/PipelineCPU.srcs/sources_1/new/MIPS_opcode.vh"/>
+        <Attr Name="ImportTime" Val="1558873088"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ALUControl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ALUControl.v"/>
+        <Attr Name="ImportTime" Val="1559201505"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ControlUnit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ControlUnit.v"/>
+        <Attr Name="ImportTime" Val="1559200175"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/DebugandDisplayUnit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../lab5/MulticycleCPU/MulticycleCPU.srcs/sources_1/new/DebugandDisplayUnit.v"/>
+        <Attr Name="ImportTime" Val="1557335361"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/DisplayPulse.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/DisplayPulse.v"/>
+        <Attr Name="ImportTime" Val="1557335504"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/Extend.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/Extend.v"/>
+        <Attr Name="ImportTime" Val="1559202090"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/FrequencyDivision.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/FrequencyDivision.v"/>
+        <Attr Name="ImportTime" Val="1557402753"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Hex7SegmentDisplay.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Hex7SegmentDisplay.v"/>
+        <Attr Name="ImportTime" Val="1556987000"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/InstructionRegister.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/InstructionRegister.v"/>
+        <Attr Name="ImportTime" Val="1557335574"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v"/>
+        <Attr Name="ImportTime" Val="1557335589"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v"/>
+        <Attr Name="ImportTime" Val="1559215297"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ProgramCounter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ProgramCounter.v"/>
+        <Attr Name="ImportTime" Val="1559143963"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Register.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Register.v"/>
+        <Attr Name="ImportTime" Val="1557469287"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/RegisterFile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/RegisterFile.v"/>
+        <Attr Name="ImportTime" Val="1559201976"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/SinglePulse.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/SinglePulse.v"/>
+        <Attr Name="ImportTime" Val="1557335469"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/文档/CPUsort3/CPU.srcs/sources_1/new/buffer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../文档/CPUsort3/CPU.srcs/sources_1/new/buffer.v"/>
+        <Attr Name="ImportTime" Val="1559138914"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/文档/CPUsort3/CPU.srcs/sources_1/new/clocking.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../文档/CPUsort3/CPU.srcs/sources_1/new/clocking.v"/>
+        <Attr Name="ImportTime" Val="1559140638"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/文档/CPUsort3/CPU.srcs/sources_1/new/font_rom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../文档/CPUsort3/CPU.srcs/sources_1/new/font_rom.v"/>
+        <Attr Name="ImportTime" Val="1559211758"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/文档/CPUsort3/CPU.srcs/sources_1/new/vga_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../文档/CPUsort3/CPU.srcs/sources_1/new/vga_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1559142234"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/文档/CPUsort3/CPU.srcs/sources_1/new/top module.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../文档/CPUsort3/CPU.srcs/sources_1/new/top module.v"/>
+        <Attr Name="ImportTime" Val="1559201472"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Debounce.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Debounce.v"/>
+        <Attr Name="ImportTime" Val="1557297693"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Counter.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Counter.v"/>
+        <Attr Name="ImportTime" Val="1555550961"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../BubbleSort.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_module"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/COD/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../文档/CPUsort3/CPU.srcs/constrs_1/imports/COD/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1559183646"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ClockingWizrad_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ClockingWizard_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Memory"/>
+</GenRun>

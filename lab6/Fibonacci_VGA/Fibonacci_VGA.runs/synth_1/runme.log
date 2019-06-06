@@ -1,0 +1,832 @@
+
+*** Running vivado
+    with args -log Fibonacci_VGA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fibonacci_VGA.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script '/home/lyc/.Xilinx/Vivado/Vivado_init.tcl'
+source Fibonacci_VGA.tcl -notrace
+Command: synth_design -top Fibonacci_VGA -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28993 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1396.988 ; gain = 7.734 ; free physical = 1879 ; free virtual = 6888
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Fibonacci_VGA' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/Fibonacci_VGA.v:23]
+	Parameter DIGIT bound to: 32 - type: integer 
+	Parameter ADDRWIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FrequencyDivision' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/FrequencyDivision.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FrequencyDivision' (1#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/FrequencyDivision.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MulticycleCPU' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:23]
+	Parameter DIGIT bound to: 32 - type: integer 
+	Parameter FIELDWIDTH bound to: 5 - type: integer 
+	Parameter ADDRWIDTH bound to: 16 - type: integer 
+	Parameter DEBUGSIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ControlUnit.v:23]
+	Parameter Idle bound to: 17'b00000000000000000 
+	Parameter InstructionFetch bound to: 1 - type: integer 
+	Parameter InstructionDecode bound to: 2 - type: integer 
+	Parameter MemoryAddressCompute bound to: 4 - type: integer 
+	Parameter MemoryAccess_LW bound to: 8 - type: integer 
+	Parameter MemoryReadComplete bound to: 16 - type: integer 
+	Parameter MemoryAccess_SW bound to: 32 - type: integer 
+	Parameter RTypeExecution bound to: 64 - type: integer 
+	Parameter RTypeComplete bound to: 128 - type: integer 
+	Parameter ADDIExecution bound to: 256 - type: integer 
+	Parameter ANDIExecution bound to: 512 - type: integer 
+	Parameter ORIExecution bound to: 1024 - type: integer 
+	Parameter XORIExecution bound to: 2048 - type: integer 
+	Parameter SLTIExecution bound to: 4096 - type: integer 
+	Parameter ITypeComplete bound to: 8192 - type: integer 
+	Parameter BEQComplete bound to: 16384 - type: integer 
+	Parameter BNEComplete bound to: 32768 - type: integer 
+	Parameter JumpComplete bound to: 65536 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (2#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ControlUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ProgramCounter.v:24]
+	Parameter DIGIT bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (3#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ProgramCounter.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:23]
+	Parameter N bound to: 2 - type: integer 
+	Parameter DATASIZE bound to: 32 - type: integer 
+WARNING: [Synth 8-153] case item 2'bx0 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bx1 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bz0 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bz1 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+INFO: [Synth 8-226] default block is never used [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer' (4#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'out' does not match port width (32) of module 'Multiplexer' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+INFO: [Synth 8-6157] synthesizing module 'InstructionRegister' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/InstructionRegister.v:23]
+	Parameter DIGIT bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'InstructionRegister' (5#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/InstructionRegister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Register' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Register.v:23]
+	Parameter DIGIT bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Register' (6#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer__parameterized0' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:23]
+	Parameter N bound to: 2 - type: integer 
+	Parameter DATASIZE bound to: 5 - type: integer 
+WARNING: [Synth 8-153] case item 2'bx0 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bx1 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bz0 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bz1 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+INFO: [Synth 8-226] default block is never used [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer__parameterized0' (6#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/RegisterFile.v:22]
+	Parameter REGSIZE bound to: 5 - type: integer 
+	Parameter DIGIT bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (7#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/RegisterFile.v:22]
+WARNING: [Synth 8-689] width (8) of port connection 'Read_Address_2' does not match port width (5) of module 'RegisterFile' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:83]
+INFO: [Synth 8-6157] synthesizing module 'SignExtend' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/Extend.v:23]
+	Parameter INDIGIT bound to: 16 - type: integer 
+	Parameter OUTDIGIT bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SignExtend' (8#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer__parameterized1' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:23]
+	Parameter N bound to: 4 - type: integer 
+	Parameter DATASIZE bound to: 32 - type: integer 
+WARNING: [Synth 8-153] case item 2'bx0 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bx1 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bz0 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bz1 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+INFO: [Synth 8-226] default block is never used [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer__parameterized1' (8#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ALUControl.v:23]
+	Parameter CTRLSIZE bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ALUControl.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (9#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ALUControl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ALU.v:23]
+	Parameter DIGIT bound to: 32 - type: integer 
+	Parameter CTRLSIZE bound to: 4 - type: integer 
+	Parameter FLAGSIZE bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Multiplexer__parameterized2' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:23]
+	Parameter N bound to: 3 - type: integer 
+	Parameter DATASIZE bound to: 32 - type: integer 
+WARNING: [Synth 8-153] case item 2'bx0 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bx1 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bz0 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+WARNING: [Synth 8-153] case item 2'bz1 will never be executed [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+INFO: [Synth 8-226] default block is never used [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplexer__parameterized2' (10#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MulticycleCPU' (11#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Memory' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.runs/synth_1/.Xil/Vivado-28976-YC-YOGA/realtime/Memory_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Memory' (12#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.runs/synth_1/.Xil/Vivado-28976-YC-YOGA/realtime/Memory_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'VGADisplayUnit' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/VGADisplayUnit.v:23]
+	Parameter H_PERIOD bound to: 1040 - type: integer 
+	Parameter HSPW bound to: 120 - type: integer 
+	Parameter HBP bound to: 64 - type: integer 
+	Parameter H_Length bound to: 800 - type: integer 
+	Parameter HFP bound to: 56 - type: integer 
+	Parameter V_PERIOD bound to: 666 - type: integer 
+	Parameter VSPW bound to: 6 - type: integer 
+	Parameter VBP bound to: 23 - type: integer 
+	Parameter V_Length bound to: 600 - type: integer 
+	Parameter VFP bound to: 37 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Clocking_Wizard_1' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.runs/synth_1/.Xil/Vivado-28976-YC-YOGA/realtime/Clocking_Wizard_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Clocking_Wizard_1' (13#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.runs/synth_1/.Xil/Vivado-28976-YC-YOGA/realtime/Clocking_Wizard_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (14#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Counter.v:23]
+WARNING: [Synth 8-689] width (10) of port connection 'Counter' does not match port width (16) of module 'Counter' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/VGADisplayUnit.v:48]
+WARNING: [Synth 8-689] width (10) of port connection 'Counter' does not match port width (16) of module 'Counter' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/VGADisplayUnit.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'VGADisplayUnit' (15#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/VGADisplayUnit.v:23]
+WARNING: [Synth 8-567] referenced signal 'Count' should be on the sensitivity list [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/Fibonacci_VGA.v:62]
+INFO: [Synth 8-6157] synthesizing module 'Fibonacci' [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Fibonacci.v:23]
+	Parameter N bound to: 10 - type: integer 
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Fibonacci.v:34]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Fibonacci.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'Fibonacci' (16#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/Fibonacci.v:23]
+WARNING: [Synth 8-3848] Net AN in module/entity Fibonacci_VGA does not have driver. [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/Fibonacci_VGA.v:30]
+WARNING: [Synth 8-3848] Net seg in module/entity Fibonacci_VGA does not have driver. [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/Fibonacci_VGA.v:31]
+WARNING: [Synth 8-3848] Net CLK5MHZ in module/entity Fibonacci_VGA does not have driver. [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/Fibonacci_VGA.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'Fibonacci_VGA' (17#1) [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/new/Fibonacci_VGA.v:23]
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[10] driven by constant 0
+WARNING: [Synth 8-3331] design VGADisplayUnit has unconnected port reset
+WARNING: [Synth 8-3331] design MulticycleCPU has unconnected port ProbeAddress[7]
+WARNING: [Synth 8-3331] design MulticycleCPU has unconnected port ProbeAddress[6]
+WARNING: [Synth 8-3331] design MulticycleCPU has unconnected port ProbeAddress[5]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[7]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[6]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[5]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[4]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[3]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[2]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[1]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[0]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[6]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[5]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[4]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[3]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[2]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[1]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[0]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port inc
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port dec
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1441.738 ; gain = 52.484 ; free physical = 1887 ; free virtual = 6897
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[31] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[30] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[29] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[28] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[27] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[26] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[25] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[24] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[23] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[22] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[21] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[20] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[19] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[18] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[17] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[16] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[15] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[14] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[13] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[12] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[11] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[10] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[9] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[8] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[7] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[6] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[5] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[4] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[3] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[2] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[1] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_2[0] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[31] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[30] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[29] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[28] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[27] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[26] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[25] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[24] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[23] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[22] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[21] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[20] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[19] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[18] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[17] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[16] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[15] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[14] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[13] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[12] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[11] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[10] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[9] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[8] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[7] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[6] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[5] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[4] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[3] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[2] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[1] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_MemAddress:in_3[0] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:78]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteAddress:in_2[4] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:81]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteAddress:in_2[3] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:81]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteAddress:in_2[2] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:81]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteAddress:in_2[1] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:81]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteAddress:in_2[0] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:81]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteAddress:in_3[4] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:81]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteAddress:in_3[3] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:81]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteAddress:in_3[2] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:81]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteAddress:in_3[1] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:81]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteAddress:in_3[0] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:81]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[31] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[30] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[29] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[28] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[27] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[26] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[25] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[24] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[23] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[22] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[21] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[20] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[19] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[18] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[17] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[16] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[15] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[14] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[13] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[12] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[11] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[10] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[9] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[8] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[7] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+WARNING: [Synth 8-3295] tying undriven pin MUX_RegisterWriteData:in_2[6] to constant 0 [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v:82]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1441.738 ; gain = 52.484 ; free physical = 1887 ; free virtual = 6897
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1441.738 ; gain = 52.484 ; free physical = 1887 ; free virtual = 6897
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/ip/Memory/Memory/Memory_in_context.xdc] for cell 'MEM'
+Finished Parsing XDC File [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/ip/Memory/Memory/Memory_in_context.xdc] for cell 'MEM'
+Parsing XDC File [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/ip/Clocking_Wizard_1/Clocking_Wizard_1/Clocking_Wizard_1_in_context.xdc] for cell 'VDU/CLK100MHZ_to_CLK50MHZ'
+Finished Parsing XDC File [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/ip/Clocking_Wizard_1/Clocking_Wizard_1/Clocking_Wizard_1_in_context.xdc] for cell 'VDU/CLK100MHZ_to_CLK50MHZ'
+Parsing XDC File [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/constrs_1/imports/Vivado/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'inc'. [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/constrs_1/imports/Vivado/Nexys4DDR_Master.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'dec'. [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/constrs_1/imports/Vivado/Nexys4DDR_Master.xdc:11]
+Finished Parsing XDC File [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/constrs_1/imports/Vivado/Nexys4DDR_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/constrs_1/imports/Vivado/Nexys4DDR_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Fibonacci_VGA_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/constrs_1/imports/Vivado/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Fibonacci_VGA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Fibonacci_VGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1791.590 ; gain = 0.000 ; free physical = 1623 ; free virtual = 6625
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1791.590 ; gain = 0.000 ; free physical = 1623 ; free virtual = 6625
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1791.590 ; gain = 0.000 ; free physical = 1623 ; free virtual = 6625
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1791.590 ; gain = 0.000 ; free physical = 1623 ; free virtual = 6625
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1791.590 ; gain = 402.336 ; free physical = 1707 ; free virtual = 6709
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1791.590 ; gain = 402.336 ; free physical = 1707 ; free virtual = 6709
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/ip/Clocking_Wizard_1/Clocking_Wizard_1/Clocking_Wizard_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.srcs/sources_1/ip/Clocking_Wizard_1/Clocking_Wizard_1/Clocking_Wizard_1_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for MEM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for VDU/CLK100MHZ_to_CLK50MHZ. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1791.590 ; gain = 402.336 ; free physical = 1709 ; free virtual = 6711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "pulse" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'CurrentState_reg' in module 'ControlUnit'
+INFO: [Synth 8-5546] ROM "PCWriteCondition_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWriteCondition_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IorD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemtoReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IRWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCSource" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrcA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrcB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "NextState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "NextState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "NextState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "NextState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "Signal" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                            00000 |                00000000000000000
+        InstructionFetch |                            00001 |                00000000000000001
+       InstructionDecode |                            00010 |                00000000000000010
+    MemoryAddressCompute |                            00011 |                00000000000000100
+         MemoryAccess_LW |                            00100 |                00000000000001000
+      MemoryReadComplete |                            00101 |                00000000000010000
+         MemoryAccess_SW |                            00110 |                00000000000100000
+          RTypeExecution |                            00111 |                00000000001000000
+           RTypeComplete |                            01000 |                00000000010000000
+           ADDIExecution |                            01001 |                00000000100000000
+           ANDIExecution |                            01010 |                00000001000000000
+            ORIExecution |                            01011 |                00000010000000000
+           XORIExecution |                            01100 |                00000100000000000
+           SLTIExecution |                            01101 |                00001000000000000
+           ITypeComplete |                            01110 |                00010000000000000
+             BEQComplete |                            01111 |                00100000000000000
+             BNEComplete |                            10000 |                01000000000000000
+            JumpComplete |                            10001 |                10000000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CurrentState_reg' using encoding 'sequential' in module 'ControlUnit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1791.590 ; gain = 402.336 ; free physical = 1699 ; free virtual = 6701
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 42    
+	               10 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 10    
+	  12 Input     17 Bit        Muxes := 1     
+	  18 Input     17 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	  19 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  19 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 33    
+	  19 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FrequencyDivision 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  12 Input     17 Bit        Muxes := 1     
+	  18 Input     17 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	  19 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  19 Input      2 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 10    
+Module ProgramCounter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Multiplexer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module InstructionRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module Register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module Multiplexer__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 31    
+Module Multiplexer__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ALUControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  15 Input      4 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Multiplexer__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module VGADisplayUnit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module Fibonacci 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "NextState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWriteCondition_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWriteCondition_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IorD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemtoReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IRWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCSource" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrcA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrcB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SecondPulse/pulse" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design Fibonacci_VGA has port LED[10] driven by constant 0
+WARNING: [Synth 8-3331] design MulticycleCPU has unconnected port ProbeAddress[7]
+WARNING: [Synth 8-3331] design MulticycleCPU has unconnected port ProbeAddress[6]
+WARNING: [Synth 8-3331] design MulticycleCPU has unconnected port ProbeAddress[5]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[7]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[6]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[5]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[4]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[3]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[2]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[1]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port AN[0]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[6]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[5]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[4]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[3]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[2]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[1]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port seg[0]
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port inc
+WARNING: [Synth 8-3331] design Fibonacci_VGA has unconnected port dec
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1791.590 ; gain = 402.336 ; free physical = 1670 ; free virtual = 6676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'VDU/CLK100MHZ_to_CLK50MHZ/clk_out1' to pin 'VDU/CLK100MHZ_to_CLK50MHZ/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1791.590 ; gain = 402.336 ; free physical = 1575 ; free virtual = 6556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1791.590 ; gain = 402.336 ; free physical = 1573 ; free virtual = 6555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1808.613 ; gain = 419.359 ; free physical = 1568 ; free virtual = 6549
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1808.613 ; gain = 419.359 ; free physical = 1568 ; free virtual = 6549
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1808.613 ; gain = 419.359 ; free physical = 1568 ; free virtual = 6549
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1808.613 ; gain = 419.359 ; free physical = 1568 ; free virtual = 6549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1808.613 ; gain = 419.359 ; free physical = 1568 ; free virtual = 6549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1808.613 ; gain = 419.359 ; free physical = 1568 ; free virtual = 6549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1808.613 ; gain = 419.359 ; free physical = 1568 ; free virtual = 6549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |Memory            |         1|
+|2     |Clocking_Wizard_1 |         1|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |Clocking_Wizard_1 |     1|
+|2     |Memory            |     1|
+|3     |CARRY4            |    32|
+|4     |LUT1              |     3|
+|5     |LUT2              |    44|
+|6     |LUT3              |   100|
+|7     |LUT4              |    31|
+|8     |LUT5              |   143|
+|9     |LUT6              |   871|
+|10    |MUXF7             |   192|
+|11    |FDCE              |  1046|
+|12    |FDRE              |   354|
+|13    |IBUF              |     1|
+|14    |OBUF              |    30|
+|15    |OBUFT             |    15|
++------+------------------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------------+------+
+|      |Instance                  |Module                      |Cells |
++------+--------------------------+----------------------------+------+
+|1     |top                       |                            |  2927|
+|2     |  CPU                     |MulticycleCPU               |  2721|
+|3     |    DR                    |RegisterFile                |  1760|
+|4     |    A                     |Register                    |    64|
+|5     |    ALUOUT                |Register_1                  |    64|
+|6     |    B                     |Register_2                  |    64|
+|7     |    CU                    |ControlUnit                 |   128|
+|8     |    IR                    |InstructionRegister         |   397|
+|9     |    MDR                   |Register_3                  |    64|
+|10    |    MUX_ALUSourceA        |Multiplexer                 |    32|
+|11    |    MUX_ALUSourceB        |Multiplexer__parameterized1 |    32|
+|12    |    MUX_MemAddress        |Multiplexer_4               |     8|
+|13    |    MUX_RegisterWriteData |Multiplexer_5               |    32|
+|14    |    PC                    |ProgramCounter              |    65|
+|15    |  VDU                     |VGADisplayUnit              |    95|
+|16    |    H_COUNT               |Counter                     |    47|
+|17    |    V_COUNT               |Counter_0                   |    47|
++------+--------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1808.613 ; gain = 419.359 ; free physical = 1568 ; free virtual = 6549
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1808.613 ; gain = 69.508 ; free physical = 1622 ; free virtual = 6603
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1808.621 ; gain = 419.359 ; free physical = 1622 ; free virtual = 6603
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 224 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1808.621 ; gain = 0.000 ; free physical = 1564 ; free virtual = 6545
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+158 Infos, 182 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1808.621 ; gain = 419.633 ; free physical = 1623 ; free virtual = 6604
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1808.621 ; gain = 0.000 ; free physical = 1623 ; free virtual = 6604
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/lyc/Vivado/lab6/Fibonacci_VGA/Fibonacci_VGA.runs/synth_1/Fibonacci_VGA.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Fibonacci_VGA_utilization_synth.rpt -pb Fibonacci_VGA_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 19:01:10 2019...

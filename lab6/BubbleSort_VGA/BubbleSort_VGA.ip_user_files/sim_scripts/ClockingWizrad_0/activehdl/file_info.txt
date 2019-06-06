@@ -1,0 +1,4 @@
+xpm_cdc.sv,systemverilog,xil_defaultlib,../../../opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0"
+xpm_VCOMP.vhd,vhdl,xpm,../../../opt/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0"
+ClockingWizrad_0_sim_netlist.v,verilog,xil_defaultlib,../../../../BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0/ClockingWizrad_0_sim_netlist.v,incdir="../../../../BubbleSort_VGA.srcs/sources_1/ip/ClockingWizrad_0"
+glbl.v,Verilog,xil_defaultlib,glbl.v

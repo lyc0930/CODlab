@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Fibonacci_VGA.srcs/sources_1/ip/Clocking_Wizard_0" --include "../../../../Fibonacci_VGA.srcs/sources_1/imports/new" --include "../../../../Fibonacci_VGA.srcs/sources_1/ip/Clocking_Wizard_1" \
+"../../../../Fibonacci_VGA.srcs/sources_1/ip/Memory/sim/Memory.v" \
+"../../../../Fibonacci_VGA.srcs/sources_1/imports/new/ALU.v" \
+"../../../../Fibonacci_VGA.srcs/sources_1/imports/new/ALUControl.v" \
+"../../../../Fibonacci_VGA.srcs/sources_1/imports/new/ControlUnit.v" \
+"../../../../Fibonacci_VGA.srcs/sources_1/new/Extend.v" \
+"../../../../Fibonacci_VGA.srcs/sim_1/imports/sim_1/imports/Vivado/GenerateClock.v" \
+"../../../../Fibonacci_VGA.srcs/sources_1/imports/new/InstructionRegister.v" \
+"../../../../Fibonacci_VGA.srcs/sources_1/imports/new/MUX.v" \
+"../../../../Fibonacci_VGA.srcs/sources_1/imports/new/MulticycleCPU.v" \
+"../../../../Fibonacci_VGA.srcs/sources_1/imports/new/ProgramCounter.v" \
+"../../../../Fibonacci_VGA.srcs/sources_1/imports/new/Register.v" \
+"../../../../Fibonacci_VGA.srcs/sources_1/new/RegisterFile.v" \
+"../../../../Fibonacci_VGA.srcs/sim_1/imports/sim_1/new/CPU_Mem_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

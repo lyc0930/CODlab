@@ -1,74 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1558003582">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BG-DRC" Name="CPUDebugDisplay.drc"/>
-  <File Type="BG-BGN" Name="CPUDebugDisplay.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="CPUDebugDisplay.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="CPUDebugDisplay.ltx"/>
-  <File Type="BITSTR-MMI" Name="CPUDebugDisplay.mmi"/>
-  <File Type="BITSTR-BMM" Name="CPUDebugDisplay_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="CPUDebugDisplay.nky"/>
-  <File Type="BITSTR-RBT" Name="CPUDebugDisplay.rbt"/>
-  <File Type="BITSTR-MSK" Name="CPUDebugDisplay.msk"/>
-  <File Type="BG-BIN" Name="CPUDebugDisplay.bin"/>
-  <File Type="BG-BIT" Name="CPUDebugDisplay.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CPUDebugDisplay_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CPUDebugDisplay_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CPUDebugDisplay_bus_skew_postroute_physopted.rpt"/>
-  <File Type="RDI-RDI" Name="CPUDebugDisplay.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CPUDebugDisplay_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CPUDebugDisplay_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CPUDebugDisplay_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CPUDebugDisplay_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CPUDebugDisplay_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW" Name="CPUDebugDisplay_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="CPUDebugDisplay_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="CPUDebugDisplay_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="CPUDebugDisplay_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="CPUDebugDisplay_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="CPUDebugDisplay_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="CPUDebugDisplay_route_status.pb"/>
-  <File Type="ROUTE-STATUS" Name="CPUDebugDisplay_route_status.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="CPUDebugDisplay_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="CPUDebugDisplay_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="CPUDebugDisplay_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CPUDebugDisplay_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CPUDebugDisplay_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="CPUDebugDisplay_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-RPX" Name="CPUDebugDisplay_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="CPUDebugDisplay_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="CPUDebugDisplay_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="CPUDebugDisplay_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="CPUDebugDisplay_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="CPUDebugDisplay_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="CPUDebugDisplay_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="CPUDebugDisplay_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="CPUDebugDisplay_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="CPUDebugDisplay_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CPUDebugDisplay_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="CPUDebugDisplay_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="CPUDebugDisplay_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="CPUDebugDisplay_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="CPUDebugDisplay_route_status.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CPUDebugDisplay_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CPUDebugDisplay_postroute_physopt_bb.dcp"/>
+  <File Type="RDI-RDI" Name="CPUDebugDisplay.vdi"/>
+  <File Type="BITSTR-LTX" Name="CPUDebugDisplay.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="CPUDebugDisplay.sysdef"/>
+  <File Type="BG-BGN" Name="CPUDebugDisplay.bgn"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-BUS-SKEW" Name="CPUDebugDisplay_bus_skew_routed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="CPUDebugDisplay_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="CPUDebugDisplay_timing_summary_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="CPUDebugDisplay_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="CPUDebugDisplay_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-CTRL" Name="CPUDebugDisplay_control_sets_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="CPUDebugDisplay_utilization_placed.pb"/>
   <File Type="PLACE-UTIL" Name="CPUDebugDisplay_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="CPUDebugDisplay_clock_utilization_placed.rpt"/>
   <File Type="PLACE-IO" Name="CPUDebugDisplay_io_placed.rpt"/>
   <File Type="PLACE-DCP" Name="CPUDebugDisplay_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="CPUDebugDisplay_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="CPUDebugDisplay_drc_pwropted.rpt"/>
   <File Type="PWROPT-DCP" Name="CPUDebugDisplay_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="CPUDebugDisplay_timing_summary_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="CPUDebugDisplay.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="CPUDebugDisplay_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="CPUDebugDisplay_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="CPUDebugDisplay_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="CPUDebugDisplay_timing_summary_init.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="CPUDebugDisplay_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="CPUDebugDisplay_reports.tcl"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="CPUDebugDisplay_bus_skew_routed.pb"/>
   <File Type="PA-TCL" Name="CPUDebugDisplay.tcl"/>
+  <File Type="BITSTR-MSK" Name="CPUDebugDisplay.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="CPUDebugDisplay_timing_summary_routed.pb"/>
+  <File Type="PHYSOPT-DCP" Name="CPUDebugDisplay_physopt.dcp"/>
+  <File Type="BITSTR-RBT" Name="CPUDebugDisplay.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CPUDebugDisplay_timing_summary_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="CPUDebugDisplay_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="CPUDebugDisplay_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="CPUDebugDisplay_opt.dcp"/>
+  <File Type="OPT-DRC" Name="CPUDebugDisplay_drc_opted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="CPUDebugDisplay_routed_error.dcp"/>
+  <File Type="BG-DRC" Name="CPUDebugDisplay.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CPUDebugDisplay_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DCP" Name="CPUDebugDisplay_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="CPUDebugDisplay_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="CPUDebugDisplay_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="CPUDebugDisplay_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="CPUDebugDisplay.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="CPUDebugDisplay_route_status.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CPUDebugDisplay_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIN" Name="CPUDebugDisplay.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CPUDebugDisplay_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-NKY" Name="CPUDebugDisplay.nky"/>
+  <File Type="BITSTR-BMM" Name="CPUDebugDisplay_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="CPUDebugDisplay_clock_utilization_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="CPUDebugDisplay.mmi"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Debounce.v">
